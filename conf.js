@@ -28,7 +28,7 @@ jsproxy_config({
     'mysite': {
       label: '节点-1',
       lines: {
-        [location.host]: 1,
+        'nb.lucenttt.workers.dev': 1,
       }
     },
     // 该节点用于加载大体积的静态资源
