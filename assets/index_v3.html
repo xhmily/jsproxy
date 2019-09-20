@@ -4,6 +4,7 @@
   <title>Page Sandbox</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=0">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
   <base target="_blank">
   <style>
     body {
@@ -12,15 +13,8 @@
     .box {
       margin-top: 1em;
     }
-    #txtURL {
-      width: 100%;
-      height: 2em;
-      text-indent: 0.5em;
-      padding: 0.25em 0;
-    }
-    #btnGo {
-      width: 100%;
-      font-size: 1.5em;
+    .box1 {
+      width: 20%
     }
     #list a {
       margin: 1em;
@@ -28,17 +22,24 @@
   </style>
 </head>
 <body>
-  <div class="box">
-    <input id="txtURL" type="text" value="www.google.com" autofocus>
-  </div>
-  <div class="box">
-    <button id="btnGo">Go</button>
-  </div>
-  <div class="box">
-    <span>切换线路:</span>
-    <select id="selNode"></select>
-  </div>
-  <div class="box" id="list">
+  <div class="container">
+    <div class="box">
+      <div class="input-group mb-3">
+        <div class="input-group-prepend">
+          <span class="input-group-text" id="basic-addon1">https://</span>
+        </div>
+        <input id="txtURL" type="text" class="form-control" value="www.google.com" autofocus>
+      </div>
+    </div>
+    <div class="box">
+      <button id="btnGo" type="button" class="btn btn-info btn-block">访 问</button>
+    </div>
+    <div class="box1">
+      <label for="exampleFormControlTextarea1">切换线路:</label>
+      <select id="selNode" id="exampleFormControlTextarea1" class="form-control form-control-sm"></select>
+    </div>
+    <div class="box" id="list">
+    </div>
   </div>
   <script>
     const PAGE_CONF_SET = 110
